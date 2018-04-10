@@ -1,1 +1,2 @@
 # web-design
+The first demo for testing usability for the course 'webdesign'. I'll be creating an overview of different photo's, which provider a larger version of the photo and more information when you click on it.
