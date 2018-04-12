@@ -6,7 +6,14 @@ html {
 body {
     width: 100%;
     margin: 0;
-    background-color: #fafafa;
+    /*background-color: #fafafa;*/
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,dce1e5+100 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #dce1e5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#dce1e5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%,#dce1e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dce1e5',GradientType=0 ); /* IE6-9 */
+    line-height: 1.4;
 }
 
 img {
@@ -25,19 +32,38 @@ ul {
 ul a {
     display: block;
     padding: 1.5em 2em;
-    background-color: #000;
+    /*background-color: #000;*/
     color: white;
 }
+
+h1, h2, h3, h4, h5, h6, .subtitle {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
 h1 {
-    font-size: 4em;
+    font-size: 10vw;
     margin: 0;
+    color: #000000;
+    background: url(stockimgs/stock7.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*text-transform: uppercase;*/
 }
 
 h2 {
     font-size: 3em;
 }
 
+h3 {
+    margin: 0.5em 0;
+    font-size: 2em;
+}
+
 a {
+    font-family: 'Open Sans', sans-serif;
     text-decoration: none;
 }
 
@@ -46,7 +72,7 @@ a {
 .nav {
     display: flex;
     flex-flow: row;
-    background-color: #000;
+    /*background-color: #000;*/
     width: 100%;
     justify-content: space-between;
     text-transform: uppercase;
@@ -78,7 +104,7 @@ a {
     /*justify-content: center;*/
     /*align-items: center;*/
     padding: 3em;
-    color: #fff;
+    /*color: #fff;*/
 
     background-image: url("stockimgs/stock5.jpeg");
     background-size: cover;
@@ -87,6 +113,8 @@ a {
 
 .hero .subtitle {
     font-size: 2em;
+    display: block;
+    padding: 1em;
 }
 
 .hero-intro {
@@ -117,18 +145,34 @@ a {
 /* header */
 .header {
     text-align: center;
-    padding: 4em 4em 0em 4em;
+    padding: 4em 2em;
+    /*color: #fff;*/
+    overflow: hidden;
+    height: calc(100vh - 12.25em);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .header .subtitle {
-    font-size: 1.5em;
+    font-size: 3vw;
+    display: block;
+    margin-top: 0.5em;
+
+    color: #000000;
+    background: url(stockimgs/stock7.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* image overview container */
 .container {
     padding: 4em;
     display: grid;
-    grid-column-gap: 2em;
+    grid-column-gap: 4em;
     grid-row-gap: 4em;
     grid-template-columns: repeat( auto-fit, minmax(30em, 1fr));
     /*max-width: 55em;*/
@@ -141,11 +185,15 @@ a {
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(15em, 1fr));
     height: 25em;
+    align-items: center;
 }
 
 .card img {
     height: 100%;
+    display: block;
     object-fit: cover;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin-left: 0;
 }
 
 .card-content {
@@ -153,6 +201,13 @@ a {
     padding: 2em;
     margin-left: -2em;
     max-height: 15em;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.card:hover .card-content {
+    margin-left: -3em;
+    margin-right: 1em;
 }
 
 /* button styles */
@@ -165,6 +220,7 @@ a {
     border-radius: 50px;
     text-align: center;
     max-width: 15em;
+    transition: color 0.3s ease, background-color .3s ease, border .3s ease;
 }
 
 .btn:hover {
