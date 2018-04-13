@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/jamalvr/web-design/issues"
   },
-  "homepage": "https://github.com/jamalvr/web-design#readme"
+  "homepage": "https://github.com/jamalvr/web-design#readme",
+  "dependencies": {
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "nodemon": "^1.17.3"
+  }
 }
