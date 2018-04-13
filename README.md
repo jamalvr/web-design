@@ -1,5 +1,7 @@
 # web-design
 The first demo for testing usability for the course 'webdesign'. I'll be creating an overview of different photo's, which provider a larger version of the photo and more information when you click on it. The user should have clear understanding what the site is about when they enter the website.
+[Go to demo](https://jamalvr.github.io/web-design/.)
+
 ## Design principles used
 For this assignment we must use at least three principles from the [list of 20 design principles.](http://bokardo.com/principles-of-user-interface-design/)
 
