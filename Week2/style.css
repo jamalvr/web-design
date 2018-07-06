@@ -1,8 +1,31 @@
-body {
-  color: pink;
+html {
+  font-family: sans-serif;
+  font-size: 1em;
 }
-body span {
-  color: pink;
+
+body {
+  background-color: whitesmoke;
+}
+
+a {
+  color: #c6003f;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem;
+  transition: color 0.3s ease-in-out;
+}
+a:hover {
+  color: #93002f;
+}
+
+main {
+  display: flex;
+}
+
+nav {
+  position: sticky;
+  display: block;
+  top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

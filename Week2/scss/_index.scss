@@ -1,6 +1,29 @@
+html {
+  font-family: $body-font;
+  font-size: $body-font-size;
+}
+
 body {
+  background-color: $body-background-color;
+}
+
+a {
   color: $primary-color;
-  span {
-    color: $primary-color;
+  text-decoration: none;
+  display: block;
+  padding: $size-8;
+  transition: color $link-transition ease-in-out;
+  &:hover {
+    color: darken($primary-color, 10%);
   }
+}
+
+main {
+  display: flex;
+}
+
+nav {
+  position: sticky;
+  display: block;
+  top: 0;
 }
