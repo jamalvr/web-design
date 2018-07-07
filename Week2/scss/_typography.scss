@@ -8,3 +8,12 @@ $h3-font-size: 2.25em;
 $h4-font-size: 1.75em;
 $h5-font-size: 1.5em;
 $h6-font-size: 1.25em;
+
+h1 {
+  font-size: $h1-font-size;
+}
+
+h2 {
+  font-size: $h2-font-size;
+  margin: $size-16 0 $size-24 0;
+}

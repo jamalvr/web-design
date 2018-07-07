@@ -1,9 +1,8 @@
 //// Colors
 $primary-color: rgba(198, 0, 63, 1);
-$font-color: rgb(23, 23, 23);
-$light-color: rgb(245, 245, 245);
-
-$body-background-color: $light-color;
+$body-font-color: rgb(23, 23, 23);
+$light-background-color: rgb(245, 245, 245);
+$body-background-color: $light-background-color;
 
 //// Sizing
 $size-8: 0.5rem;

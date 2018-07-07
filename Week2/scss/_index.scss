@@ -1,6 +1,8 @@
 html {
   font-family: $body-font;
   font-size: $body-font-size;
+  color: $body-font-color;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -19,11 +21,27 @@ a {
 }
 
 main {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 72.5em;
+  margin: auto;
 }
 
-nav {
+header {
+  grid-column: 1 / span 3;
+}
+
+section {
+  grid-column: 2 / span 2;
+}
+
+ol {
   position: sticky;
-  display: block;
   top: 0;
+  margin: 0;
+  padding: $size-32 0 $size-32 $size-32;
+}
+
+article {
+  padding: $size-24 0;
 }
