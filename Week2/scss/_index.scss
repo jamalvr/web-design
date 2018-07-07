@@ -1,47 +1,62 @@
-html {
-  font-family: $body-font;
-  font-size: $body-font-size;
-  color: $body-font-color;
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: $body-background-color;
-}
-
-a {
-  color: $primary-color;
-  text-decoration: none;
-  display: block;
-  padding: $size-8;
-  transition: color $link-transition ease-in-out;
-  &:hover {
-    color: darken($primary-color, 10%);
+.home-page {
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2.5rem;
+    max-width: 67.5rem;
+    margin: auto;
   }
-}
 
-main {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  max-width: 72.5em;
-  margin: auto;
-}
+  header {
+    grid-column: 1 / span 3;
+  }
 
-header {
-  grid-column: 1 / span 3;
-}
+  h1 {
+    font-size: $size-80;
+    text-transform: uppercase;
+  }
 
-section {
-  grid-column: 2 / span 2;
-}
+  section {
+    grid-column: 2 / span 2;
+  }
 
-ol {
-  position: sticky;
-  top: 0;
-  margin: 0;
-  padding: $size-32 0 $size-32 $size-32;
-}
+  nav {
+    .container {
+      position: sticky;
+      top: 0;
+    }
+  }
 
-article {
-  padding: $size-24 0;
+  ul {
+    list-style-type: none;
+    padding: $size-24 0 0 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 0.5rem;
+    button {
+      padding: $size-8 0;
+      width: 100%;
+      border: 1px solid $primary-color;
+      color: $primary-color;
+      border-radius: 0.25rem;
+      background-color: transparent;
+      &:hover {
+        border-color: darken($primary-color, 10%);
+        color: darken($primary-color, 10%);
+      }
+    }
+  }
+
+  ol {
+    margin: 0;
+    padding: $size-24 0 $size-32 $size-32;
+  }
+
+  article {
+    position: relative;
+    padding: $size-16 0;
+    border-bottom: solid 1px $primary-color;
+    margin: $size-24 0;
+  }
 }
