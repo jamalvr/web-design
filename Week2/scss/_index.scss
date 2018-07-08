@@ -3,16 +3,18 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 2.5rem;
-    max-width: 67.5rem;
-    margin: auto;
   }
 
+  input[type="search"] {
+    width: 100%;
+    margin: $size-16 0 0 0;
+  }
   header {
     grid-column: 1 / span 3;
   }
 
   h1 {
-    font-size: $size-80;
+    font-size: $size-64;
     text-transform: uppercase;
   }
 
@@ -21,12 +23,16 @@
   }
 
   nav {
-    .container {
+    .sticky {
       position: sticky;
       top: 0;
     }
   }
 
+  a {
+    display: block;
+    padding: $size-8;
+  }
   ul {
     list-style-type: none;
     padding: $size-24 0 0 0;

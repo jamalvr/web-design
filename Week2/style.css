@@ -1,9 +1,9 @@
 h1 {
-  font-size: 2.75em;
+  font-size: 2.75rem;
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   margin: 1rem 0 1.5rem 0;
 }
 
@@ -11,22 +11,28 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 2.5rem;
-  max-width: 67.5rem;
-  margin: auto;
+}
+.home-page input[type=search] {
+  width: 100%;
+  margin: 1rem 0 0 0;
 }
 .home-page header {
   grid-column: 1/span 3;
 }
 .home-page h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   text-transform: uppercase;
 }
 .home-page section {
   grid-column: 2/span 2;
 }
-.home-page nav .container {
+.home-page nav .sticky {
   position: sticky;
   top: 0;
+}
+.home-page a {
+  display: block;
+  padding: 0.5rem;
 }
 .home-page ul {
   list-style-type: none;
@@ -59,11 +65,46 @@ h2 {
   margin: 1.5rem 0;
 }
 
+.detail-page main {
+  max-width: 50rem;
+}
+.detail-page section {
+  padding: 0 0 2rem 0;
+}
+.detail-page section:first-of-type {
+  font-size: 1.5rem;
+}
+.detail-page li span {
+  font-style: italic;
+  color: #5e5e5e;
+}
+.detail-page h1 {
+  display: flex;
+  align-items: center;
+}
+.detail-page h1 i {
+  font-size: 1.5rem;
+  margin: 0 1rem;
+}
+
+.text-highlight {
+  box-shadow: inset 10px 10px 0px 200px rgba(255, 204, 0, 0.598);
+}
+.text-highlight:hover {
+  box-shadow: inset 10px 10px 0px 200px #ffcc00;
+}
+.text-highlight:focus {
+  box-shadow: inset 10px 10px 0px 200px #ffcc00, 0px 0px 0px 2px #2e6b88;
+}
+
 html {
   font-family: sans-serif;
-  font-size: 1em;
+  font-size: 1.2rem;
   color: #171717;
   scroll-behavior: smooth;
+}
+html:not(h1), html:not(h2), html:not(h3), html:not(h4), html:not(h5), html:not(h6) {
+  line-height: 1.4;
 }
 
 body {
@@ -72,12 +113,11 @@ body {
 
 a {
   color: #c6003f;
+  cursor: pointer;
   text-decoration: none;
-  display: block;
-  padding: 0.5rem;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
-a:hover {
+a:hover, a:focus {
   color: #93002f;
 }
 
@@ -90,6 +130,19 @@ button {
   box-shadow: inset 0px 0px 0px 2px #009fe8;
 }
 
+:active {
+  outline: none;
+  box-shadow: none;
+}
+
+input[type=search] {
+  outline: 0;
+  border: 1px solid #c6003f;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+
 .sr-link {
   position: absolute;
   top: 0;
@@ -97,6 +150,11 @@ button {
   bottom: 0;
   left: 0;
   font-size: 0;
+}
+
+main {
+  max-width: 67.5rem;
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
