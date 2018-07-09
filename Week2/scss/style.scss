@@ -7,6 +7,7 @@
 //// Base styles
 body {
   background-color: $body-background-color;
+  min-height: 100vh;
 }
 
 a {
@@ -44,14 +45,14 @@ input[type="search"] {
   border-radius: $border-radius-small;
 }
 
-.sr-link {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  font-size: 0;
-}
+// .sr-link {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   font-size: 0;
+// }
 
 main {
   max-width: 67.5rem;

@@ -9,9 +9,9 @@ if (document.getElementById("principles-search")) {
     for (let i = 0; i < principles.length; i++) {
       let a = principles[i].getElementsByTagName("a")[0];
       if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-        principles[i].style.display = "";
+        principles[i].classList.remove("inactive");
       } else {
-        principles[i].style.display = "none";
+        principles[i].classList.add("inactive");
       }
     }
   }
