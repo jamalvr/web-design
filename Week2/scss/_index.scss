@@ -20,6 +20,7 @@
 
   section {
     grid-column: 2 / span 2;
+    position: relative;
   }
 
   nav {
@@ -62,10 +63,13 @@
   }
 
   article {
-    position: relative;
+    // position: relative;
     padding: $size-16 0;
     border-bottom: solid 1px $primary-color;
     margin: $size-24 0;
+    background-color: $light-background-color;
+    position: relative;
+    z-index: -1;
   }
 
   .principle-number {
@@ -75,10 +79,10 @@
     font-size: 5em;
   }
 
-  .principle {
-    transition: height 0.2s ease-in-out, padding 0.2s ease-in-out,
-      margin 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  }
+  // .principle {
+  //   transition: height 0.2s ease-in-out, padding 0.2s ease-in-out,
+  //     margin 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  // }
 
   .inactive {
     height: 0;
@@ -87,5 +91,16 @@
     opacity: 0;
     position: absolute;
     visibility: hidden;
+  }
+
+  .nomatch {
+    position: absolute;
+    z-index: -3;
+    width: 100%;
+    opacity: 0.5;
+    top: $size-32;
+    left: 0;
+    font-size: $size-32;
+    text-align: center;
   }
 }
