@@ -20,6 +20,7 @@
             </header>
             <nav>
                 <div class="sticky">
+                    <input id="principles-search" onkeyup="navSearch()" type="search" placeholder="Search...">
                     <ul class="filters">
                         <li>
                             <button>
@@ -40,72 +41,74 @@
                             </button>
                         </li>
                     </ul>
-                    <input type="search" placeholder="Search...">
-                    <ol id="principles-list" class="principles">
-                        <li>
+
+                    <ol id="principles-nav-list" class="principles">
+                        <li class="principle">
                             <a href="#1">Clarity is job #1</a>
                         </li>
-                        <li>
+                        <li class="principle">
                             <a href="#2">Interfaces exist to enable interaction</a>
                         </li>
-                        <li>
+                        <li class="principle">
                             <a href="#3">Conserve attention at all costs</a>
                         </li>
-                        <li>
+                        <li class="principle">
                             <a href="#4">Keep users in control</a>
                         </li>
-                        <li>
+                        <li class="principle">
                             <a href="#5">Direct manipulation is best</a>
                         </li>
-                        <li>
+                        <li class="principle">
                             <a href="#6">One primary action per screen</a>
                         </li>
-                        <li>
+                        <li class="principle">
                             <a href="#7">Keep secondary actions secondary</a>
                         </li>
-                        <li>
+                        <li class="principle">
                             <a href="#8">Provide a natural next step</a>
                         </li>
-                        <li>
+                        <li class="principle">
                             <a href="#9">Appearance follows behavior</a>
                         </li>
-                        <li>
+                        <li class="principle">
                             <a href="#10">Consistency matters</a>
                         </li>
-                        <li>
+                        <li class="principle">
                             <a href="#11">Strong visual hierarchies work best</a>
                         </li>
-                        <li>
+                        <li class="principle">
                             <a href="#12">Smart organization reduces cognitive load</a>
                         </li>
-                        <li>
+                        <li class="principle">
                             <a href="#13">Highlight, don't determine, with color</a>
                         </li>
-                        <li>
+                        <li class="principle">
                             <a href="#14">Progressive disclosure</a>
                         </li>
-                        <li>
+                        <li class="principle">
                             <a href="#15">Help people inline</a>
                         </li>
-                        <li>
+                        <li class="principle">
                             <a href="#16">A crucial moment: the zero state</a>
                         </li>
-                        <li>
+                        <li class="principle">
                             <a href="#17">Great design is invisible</a>
                         </li>
-                        <li>
+                        <li class="principle">
                             <a href="#18">Build on other design disciplines</a>
                         </li>
-                        <li>
+                        <li class="principle">
                             <a href="#19">Interfaces exist to be used</a>
                         </li>
                     </ol>
                 </div>
             </nav>
-            <section>
-                <article id="1">
+            <section id="principles-list">
+                <article class="principle" id="1">
                     <header>
-                        <h2>Clarity is job #1</h2>
+                        <h2>
+                            <a href="detail.html">Clarity is job #1</a>
+                        </h2>
                     </header>
                     <p>Clarity is the first and most important job of any interface. To be effective using an interface you've
                         designed, people must be able to recognize what it is, care about why they would use it, understand
@@ -115,9 +118,11 @@
                         One hundred clear screens is preferable to a single cluttered one.</p>
                     <a class="sr-link" href="detail.html"></a>
                 </article>
-                <article id="2">
+                <article class="principle" id="2">
                     <header>
-                        <h2>Interfaces exist to enable interaction</h2>
+                        <h2>
+                            <a href="detail.html">Interfaces exist to enable interaction</a>
+                        </h2>
                     </header>
                     <p>Interfaces exist to enable interaction between humans and our world. They can help clarify, illuminate,
                         enable, show relationships, bring us together, pull us apart, manage our expectations, and give us
@@ -128,9 +133,11 @@
                     </p>
                     <a class="sr-link" href=""></a>
                 </article>
-                <article id="3">
+                <article class="principle" id="3">
                     <header>
-                        <h2>Conserve attention at all costs</h2>
+                        <h2>
+                            <a href="detail.html">Conserve attention at all costs</a>
+                        </h2>
                     </header>
                     <p>We live in a world of interruption. It's hard to read in peace anymore without something trying to distract
                         us and direct our attention elsewhere. Attention is precious. Don't litter the side of your applications
@@ -140,9 +147,11 @@
                         becomes the prerequisite. Conserve it at all costs.</p>
                     <a class="sr-link" href=""></a>
                 </article>
-                <article id="4">
+                <article class="principle" id="4">
                     <header>
-                        <h2>Keep users in control</h2>
+                        <h2>
+                            <a href="detail.html">Keep users in control</a>
+                        </h2>
                     </header>
                     <p>Humans are most comfortable when they feel in control of themselves and their environment. Thoughtless
                         software takes away that comfort by forcing people into unplanned interactions, confusing pathways,
@@ -151,9 +160,11 @@
                         Don't worry about stating the obvious…the obvious almost never is.</p>
                     <a class="sr-link" href=""></a>
                 </article>
-                <article id="5">
+                <article class="principle" id="5">
                     <header>
-                        <h2>Direct manipulation is best</h2>
+                        <h2>
+                            <a href="detail.html">Direct manipulation is best</a>
+                        </h2>
                     </header>
                     <p>The best interface is none at all, when we are able to directly manipulate the physical objects in our
                         world. Since this is not always possible, and objects are increasingly informational, we create interfaces
@@ -165,9 +176,11 @@
                         the user has a feeling of direct manipulation with the object of their focus.</p>
                     <a class="sr-link" href=""></a>
                 </article>
-                <article id="6">
+                <article class="principle" id="6">
                     <header>
-                        <h2>One primary action per screen</h2>
+                        <h2>
+                            <a href="detail.html">One primary action per screen</a>
+                        </h2>
                     </header>
                     <p>Every screen we design should support a single action of real value to the person using it. This makes
                         it easier to learn, easier to use, and easier to add to or build on when necessary. Screens that
@@ -176,9 +189,11 @@
                         raison d'etre.</p>
                     <a class="sr-link" href=""></a>
                 </article>
-                <article id="7">
+                <article class="principle" id="7">
                     <header>
-                        <h2>Keep secondary actions secondary</h2>
+                        <h2>
+                            <a href="detail.html">Keep secondary actions secondary</a>
+                        </h2>
                     </header>
                     <p>Screens with a single primary action can have multiple secondary actions but they need to be kept secondary!
                         The reason why your article exists isn't so that people can share it on Twitter…it exists for people
@@ -186,9 +201,11 @@
                         or shown after the primary action has been achieved.</p>
                     <a class="sr-link" href=""></a>
                 </article>
-                <article id="8">
+                <article class="principle" id="8">
                     <header>
-                        <h2>Provide a natural next step</h2>
+                        <h2>
+                            <a href="detail.html">Provide a natural next step</a>
+                        </h2>
                     </header>
                     <p>Very few interactions are meant to be the last, so thoughtfully design a next step for each interaction
                         a person has with your interface. Anticipate what the next interaction should be and design to support
@@ -197,9 +214,11 @@
                         helps them further achieve their goals.</p>
                     <a class="sr-link" href=""></a>
                 </article>
-                <article id="9">
+                <article class="principle" id="9">
                     <header>
-                        <h2>Appearance follows behavior</h2>
+                        <h2>
+                            <a href="detail.html">Appearance follows behavior</a>
+                        </h2>
                     </header>
                     <p>Humans are most comfortable with things that behave the way we expect. Other people, animals, objects,
                         software. When someone or something behaves consistently with our expectations we feel like we have
@@ -209,9 +228,11 @@
                         Don't get cute with the basics of interaction…keep your creativity for higher order concerns.</p>
                     <a class="sr-link" href=""></a>
                 </article>
-                <article id="10">
+                <article class="principle" id="10">
                     <header>
-                        <h2>Consistency matters</h2>
+                        <h2>
+                            <a href="detail.html">Consistency matters</a>
+                        </h2>
                     </header>
                     <p>Following on the previous principle, screen elements should not appear consistent with each other unless
                         they behave consistently with each other. Elements that behave the same should look the same. But
@@ -221,9 +242,11 @@
                         is appropriate.</p>
                     <a class="sr-link" href=""></a>
                 </article>
-                <article id="11">
+                <article class="principle" id="11">
                     <header>
-                        <h2>Strong visual hierarchies work best</h2>
+                        <h2>
+                            <a href="detail.html">Strong visual hierarchies work best</a>
+                        </h2>
                     </header>
                     <p>elements on a screen. That is, when users view the same items in the same order every time. Weak visual
                         hierarchies give little clue about where to rest one's gaze and end up feeling cluttered and confusing.
@@ -234,9 +257,11 @@
                         ways to strengthen (or weaken) a design.</p>
                     <a class="sr-link" href=""></a>
                 </article>
-                <article id="12">
+                <article class="principle" id="12">
                     <header>
-                        <h2>Smart organization reduces cognitive load</h2>
+                        <h2>
+                            <a href="detail.html">Smart organization reduces cognitive load</a>
+                        </h2>
                     </header>
                     <p>As John Maeda says in his book Simplicity, smart organization of screen elements can make the many appear
                         as the few. This helps people understand your interface easier and more quickly, as you've illustrated
@@ -247,9 +272,11 @@
                         into your screens.</p>
                     <a class="sr-link" href=""></a>
                 </article>
-                <article id="13">
+                <article class="principle" id="13">
                     <header>
-                        <h2>Highlight, don't determine, with color</h2>
+                        <h2>
+                            <a href="detail.html">Highlight, don't determine, with color</a>
+                        </h2>
                     </header>
                     <p>The color of physical things changes as light changes. In the full light of day we see a very different
                         tree than one outlined against a sunset. As in the physical world, where color is a many-shaded thing,
@@ -260,9 +287,11 @@
                         for your audience.</p>
                     <a class="sr-link" href=""></a>
                 </article>
-                <article id="14">
+                <article class="principle" id="14">
                     <header>
-                        <h2>Progressive disclosure</h2>
+                        <h2>
+                            <a href="detail.html">Progressive disclosure</a>
+                        </h2>
                     </header>
                     <p>Show only what is necessary on each screen. If people are making a choice, show enough information to
                         allow them the choice, then dive into details on a subsequent screen. Avoid the tendency to over-explain
@@ -270,9 +299,11 @@
                         disclosing information as necessary. This will keep your interactions more clear.</p>
                     <a class="sr-link" href=""></a>
                 </article>
-                <article id="15">
+                <article class="principle" id="15">
                     <header>
-                        <h2>Help people inline</h2>
+                        <h2>
+                            <a href="detail.html">Help people inline</a>
+                        </h2>
                     </header>
                     <p>In ideal interfaces, help is not necessary because the interface is learnable and usable. The step below
                         this, reality, is one in which help is inline and contextual, available only when and where it is
@@ -281,9 +312,11 @@
                         make sure that it is out of the way of people who already know how to use your interface.</p>
                     <a class="sr-link" href=""></a>
                 </article>
-                <article id="16">
+                <article class="principle" id="16">
                     <header>
-                        <h2>A crucial moment: the zero state</h2>
+                        <h2>
+                            <a href="detail.html">A crucial moment: the zero state</a>
+                        </h2>
                     </header>
                     <p>The first time experience with an interface is crucial, yet often overlooked by designers. In order to
                         best help our users get up to speed with our designs, it is best to design for the zero state, the
@@ -292,9 +325,11 @@
                         context…once people understand the rules they have a much higher likelihood of success.</p>
                     <a class="sr-link" href=""></a>
                 </article>
-                <article id="17">
+                <article class="principle" id="17">
                     <header>
-                        <h2>Great design is invisible</h2>
+                        <h2>
+                            <a href="detail.html">Great design is invisible</a>
+                        </h2>
                     </header>
                     <p>A curious property of great design is that it usually goes unnoticed by the people who use it. One reason
                         for this is that if the design is successful the user can focus on their own goals and not the interface…when
@@ -303,9 +338,11 @@
                         content with a well-used design…and know that happy users are often silent.</p>
                     <a class="sr-link" href=""></a>
                 </article>
-                <article id="18">
+                <article class="principle" id="18">
                     <header>
-                        <h2>Build on other design disciplines</h2>
+                        <h2>
+                            <a href="detail.html">Build on other design disciplines</a>
+                        </h2>
                     </header>
                     <p>Visual and graphic design, typography, copywriting, information architecture and visualization…all of
                         these disciplines are part of interface design. They can be touched upon or specialized in. Do not
@@ -314,9 +351,11 @@
                         learn from publishing, writing code, bookbinding, skateboarding, firefighting, karate?</p>
                     <a class="sr-link" href=""></a>
                 </article>
-                <article id="19">
+                <article class="principle" id="19">
                     <header>
-                        <h2>Interfaces exist to be used</h2>
+                        <h2>
+                            <a href="detail.html">Interfaces exist to be used</a>
+                        </h2>
                     </header>
                     <p>As in most design disciplines, interface design is successful when people are using what you've designed.
                         Like a beautiful chair that is uncomfortable to sit in, design has failed when people choose not

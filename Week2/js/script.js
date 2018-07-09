@@ -1,17 +1,18 @@
-// if (document.querySelector("nav")) {
-//   let scrollpos = window.scrollY;
-//   const header = document.querySelector("nav");
-//   const header_height = header.offsetHeight;
-//   const add_class_on_scroll = () => header.classList.add("fade-in");
-//   const remove_class_on_scroll = () => header.classList.remove("fade-in");
+if (document.getElementById("principles-search")) {
+  function navSearch() {
+    // Declare variables
+    let input = document.getElementById("principles-search");
+    let filter = input.value.toUpperCase();
+    let principles = document.getElementsByClassName("principle");
 
-//   window.addEventListener("scroll", function() {
-//     scrollpos = window.scrollY;
-//     if (scrollpos >= header_height) {
-//       add_class_on_scroll();
-//     } else {
-//       remove_class_on_scroll();
-//     }
-//     console.log(scrollpos);
-//   });
-// }
+    // Loop through all list items, and hide those who don't match the search query
+    for (let i = 0; i < principles.length; i++) {
+      let a = principles[i].getElementsByTagName("a")[0];
+      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        principles[i].style.display = "";
+      } else {
+        principles[i].style.display = "none";
+      }
+    }
+  }
+}

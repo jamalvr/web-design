@@ -5,6 +5,19 @@ $light-background-color: rgb(245, 245, 245);
 $inactive-color: rgb(94, 94, 94);
 $body-background-color: $light-background-color;
 
+//// Typography
+$body-font: sans-serif;
+$body-font-size: 1.2rem;
+$body-line-height: 1.4;
+$header-font: sans-serif;
+$h1-font-size: 2.75rem;
+$h2-font-size: 2.5rem;
+$h3-font-size: 2.25rem;
+$h4-font-size: 1.75rem;
+$h5-font-size: 1.5rem;
+$h6-font-size: 1.25rem;
+$header-line-height: 1.1;
+
 //// Sizing
 $size-8: 0.5rem;
 $size-16: 1rem;

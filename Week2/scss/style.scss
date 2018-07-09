@@ -5,21 +5,6 @@
 @import "detail.scss";
 
 //// Base styles
-html {
-  font-family: $body-font;
-  font-size: $body-font-size;
-  color: $body-font-color;
-  scroll-behavior: smooth;
-  &:not(h1),
-  &:not(h2),
-  &:not(h3),
-  &:not(h4),
-  &:not(h5),
-  &:not(h6) {
-    line-height: 1.4;
-  }
-}
-
 body {
   background-color: $body-background-color;
 }

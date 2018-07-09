@@ -1,3 +1,22 @@
+html {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  color: #171717;
+  scroll-behavior: smooth;
+}
+html:not(h1), html:not(h2), html:not(h3), html:not(h4), html:not(h5), html:not(h6) {
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+}
+
 h1 {
   font-size: 2.75rem;
 }
@@ -89,22 +108,13 @@ h2 {
 
 .text-highlight {
   box-shadow: inset 10px 10px 0px 200px rgba(255, 204, 0, 0.598);
+  color: #93002f;
 }
 .text-highlight:hover {
   box-shadow: inset 10px 10px 0px 200px #ffcc00;
 }
 .text-highlight:focus {
   box-shadow: inset 10px 10px 0px 200px #ffcc00, 0px 0px 0px 2px #2e6b88;
-}
-
-html {
-  font-family: sans-serif;
-  font-size: 1.2rem;
-  color: #171717;
-  scroll-behavior: smooth;
-}
-html:not(h1), html:not(h2), html:not(h3), html:not(h4), html:not(h5), html:not(h6) {
-  line-height: 1.4;
 }
 
 body {
