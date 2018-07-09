@@ -1,0 +1,37 @@
+.detail-page {
+  main {
+    max-width: 50rem;
+  }
+  section {
+    padding: 0 0 $size-32 0;
+    &:first-of-type {
+      font-size: $size-24;
+    }
+  }
+  li {
+    span {
+      font-style: italic;
+      color: $inactive-color;
+    }
+  }
+  h1 {
+    display: flex;
+    align-items: center;
+    i {
+      font-size: $size-24;
+      margin: 0 $size-16;
+    }
+  }
+}
+
+.text-highlight {
+  box-shadow: inset 10px 10px 0px 200px rgba(255, 204, 0, 0.598);
+  color: darken($primary-color, 10%);
+  &:hover {
+    box-shadow: inset 10px 10px 0px 200px rgba(255, 204, 0, 1);
+  }
+  &:focus {
+    box-shadow: inset 10px 10px 0px 200px rgba(255, 204, 0, 1),
+      0px 0px 0px 2px rgb(46, 107, 136);
+  }
+}
