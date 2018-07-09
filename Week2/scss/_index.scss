@@ -69,12 +69,12 @@
     margin: $size-24 0;
     background-color: $light-background-color;
     position: relative;
-    z-index: -1;
+    z-index: 1;
   }
 
   .principle-number {
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     color: rgba($color: #000000, $alpha: 0.1);
     font-size: 5em;
   }
@@ -102,5 +102,40 @@
     left: 0;
     font-size: $size-32;
     text-align: center;
+  }
+
+  #principles-list {
+    a {
+      position: relative;
+      z-index: 1;
+      &:hover > .wtf-indicator {
+        opacity: 1;
+      }
+    }
+  }
+
+  .wtf-indicator {
+    font-size: 0.8rem;
+    position: absolute;
+    background-color: rgb(31, 31, 31);
+    color: #fff;
+    display: block;
+    padding: $size-8;
+    border-radius: $border-radius-small;
+    font-weight: normal;
+    top: -$size-32;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    &::after {
+      content: "";
+      position: absolute;
+      left: $size-16;
+      bottom: -$size-8;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid rgb(31, 31, 31);
+    }
   }
 }
