@@ -3,6 +3,12 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 2.5rem;
+    & > header {
+      text-align: center;
+      p {
+        font-size: $size-24;
+      }
+    }
   }
 
   input[type="search"] {
@@ -11,10 +17,6 @@
   }
   header {
     grid-column: 1 / span 3;
-  }
-
-  h1 {
-    text-align: center;
   }
 
   section {

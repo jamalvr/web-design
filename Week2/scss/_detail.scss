@@ -3,7 +3,8 @@
     text-align: center;
     img {
       width: 100%;
-      max-height: 20rem;
+      max-width: 65rem;
+      max-height: 50rem;
       object-fit: cover;
     }
   }
@@ -35,7 +36,7 @@
   .example-images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: $size-16;
+    grid-gap: $size-32 $size-16;
     img {
       height: 10rem;
       width: 10rem;
@@ -60,13 +61,15 @@
 
 .text-highlight {
   box-shadow: inset 10px 10px 0px 200px rgba(255, 204, 0, 0.598);
-  color: darken($primary-color, 10%);
+  color: darken($primary-color, 40%);
   &:hover {
     box-shadow: inset 10px 10px 0px 200px rgba(255, 204, 0, 1);
+    color: darken($primary-color, 40%);
   }
   &:focus {
     box-shadow: inset 10px 10px 0px 200px rgba(255, 204, 0, 1),
       0px 0px 0px 2px rgb(46, 107, 136);
+    color: darken($primary-color, 40%);
   }
 }
 
