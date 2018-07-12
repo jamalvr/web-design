@@ -17,7 +17,7 @@ if (document.getElementById("principles-search")) {
   }
 }
 
-if (document.getElementById("principles")) {
+if (document.getElementById("principles-list")) {
   function wtfIndicator() {
     let section = document.getElementById("principles-list");
     let links = section.getElementsByTagName("a");
@@ -30,5 +30,42 @@ if (document.getElementById("principles")) {
       links[i].appendChild(span);
     }
   }
+
   wtfIndicator();
+}
+
+// vjeze jquery code die gelukkig wel werkt
+if (document.getElementsByClassName("sort-bar")) {
+  function sort() {
+    let newest = document.getElementById("newest");
+    let oldest = document.getElementById("oldest");
+    let $wrapper = $(".example-images");
+
+    newest.addEventListener("click", function() {
+      $wrapper
+        .find("a")
+        .sort(function(a, b) {
+          return +a.dataset.percentage - +b.dataset.percentage;
+        })
+        .appendTo($wrapper);
+      if (!newest.classList.contains("active")) {
+        newest.classList.add("active");
+        oldest.classList.remove("active");
+      }
+    });
+
+    oldest.addEventListener("click", function() {
+      $wrapper
+        .find("a")
+        .sort(function(b, a) {
+          return +a.dataset.percentage - +b.dataset.percentage;
+        })
+        .appendTo($wrapper);
+      if (!oldest.classList.contains("active")) {
+        oldest.classList.add("active");
+        newest.classList.remove("active");
+      }
+    });
+  }
+  sort();
 }
