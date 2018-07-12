@@ -17,21 +17,25 @@
     border-radius: 4px;
     color: $primary-color;
     font-size: $size-16;
-    transition: background-color .15s ease-in-out, color .15s ease-in-out, border-color .15s ease-in-out; 
-    &:active, &.active {
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out;
+    &:active,
+    &.active {
       background-color: $primary-color;
       color: #fff;
       box-shadow: none;
     }
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       border-color: darken($primary-color, 10%);
       color: darken($primary-color, 10%);
     }
-    &.active:hover, &.active:focus {
+    &.active:hover,
+    &.active:focus {
       background-color: darken($primary-color, 10%);
       border-color: darken($primary-color, 10%);
       color: #fff;
-    } 
+    }
   }
 
   section {
@@ -57,6 +61,7 @@
   }
 
   .example-images {
+    text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: $size-32 $size-16;

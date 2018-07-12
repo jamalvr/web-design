@@ -199,6 +199,7 @@ h2 {
   margin: 0 1rem;
 }
 .detail-page .example-images {
+  text-align: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem 1rem;
