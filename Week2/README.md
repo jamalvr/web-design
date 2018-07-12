@@ -4,7 +4,9 @@ Dit is mijn eindopdracht voor het vak web design. Ik had eerst gekozen voor de e
 
 ## The 19 [Principles of User Interface Design](http://bokardo.com/principles-of-user-interface-design/)
 
-De eerstejaars studenten van CMD krijgen een tentamen over al deze principes. Het is dus aan ons (in dit geval aan mij), om er voor te zorgen dat ze op een makkelijke manier de stof kunnen begrijpen. Want laten we nou wel eerlijk wezen. Wanneer je voor het eerst een droge tekst leest waar je nog geen voorstelling bij hebt, snap je daar natuurlijk geen drol van. Om het makkelijk te maken wil ik meer context geven aan de droge tekst door middel van voorbeelden en text-highlighting.
+De eerstejaars studenten van CMD krijgen een tentamen over al deze principes. Het is dus aan ons (in dit geval aan mij), om er voor te zorgen dat ze op een makkelijke manier de stof kunnen begrijpen. Want laten we nou wel eerlijk wezen.
+
+Wanneer je voor het eerst een droge tekst leest waar je nog geen voorstelling bij hebt, snap je daar natuurlijk geen drol van. Om het makkelijk te maken wil ik meer context geven aan de droge tekst door middel van voorbeelden en text-highlighting.
 
 ### User scenario's:
 

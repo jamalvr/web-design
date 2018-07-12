@@ -17,17 +17,18 @@ if (document.getElementById("principles-search")) {
   }
 }
 
-function wtfIndicator() {
-  let section = document.getElementById("principles-list");
-  let links = section.getElementsByTagName("a");
+if (document.getElementById("principles")) {
+  function wtfIndicator() {
+    let section = document.getElementById("principles-list");
+    let links = section.getElementsByTagName("a");
 
-  for (let i = 0; i < links.length; i++) {
-    let span = document.createElement("span");
-    let text = document.createTextNode("Wat the actual fuck does this mean?");
-    span.appendChild(text);
-    span.classList.add("wtf-indicator");
-    links[i].appendChild(span);
+    for (let i = 0; i < links.length; i++) {
+      let span = document.createElement("span");
+      let text = document.createTextNode("Wat the actual fuck does this mean?");
+      span.appendChild(text);
+      span.classList.add("wtf-indicator");
+      links[i].appendChild(span);
+    }
   }
+  wtfIndicator();
 }
-
-wtfIndicator();
