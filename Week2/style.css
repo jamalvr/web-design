@@ -157,6 +157,19 @@ h2 {
 .detail-page main {
   max-width: 50rem;
 }
+.detail-page button {
+  padding: 0.5rem 1rem;
+  border: solid #c6003f 2px;
+  border-radius: 4px;
+  color: #c6003f;
+  font-size: 1rem;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+.detail-page button:hover, .detail-page button:active, .detail-page button:focus {
+  background-color: #c6003f;
+  color: #fff;
+  box-shadow: none;
+}
 .detail-page section {
   padding: 0 0 2rem 0;
 }
@@ -180,6 +193,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem 1rem;
+  padding-top: 2rem;
 }
 .detail-page .example-images img {
   height: 10rem;

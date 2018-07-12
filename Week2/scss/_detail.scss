@@ -11,6 +11,20 @@
   main {
     max-width: 50rem;
   }
+  button {
+    padding: $size-8 $size-16;
+    border: solid $primary-color 2px;
+    border-radius: 4px;
+    color: $primary-color;
+    font-size: $size-16;
+    transition: background-color .15s ease-in-out, color .15s ease-in-out,; 
+    &:hover, &:active, &:focus {
+      background-color: $primary-color;
+      color: #fff;
+      box-shadow: none;
+    }
+  }
+
   section {
     padding: 0 0 $size-32 0;
     &:first-of-type {
@@ -37,6 +51,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: $size-32 $size-16;
+    padding-top: $size-32;
     img {
       height: 10rem;
       width: 10rem;
