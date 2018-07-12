@@ -1,8 +1,17 @@
-# [Webdesign eindopdracht](github.com/jamalvr/web-design/week2)
+# [Webdesign eindopdracht](github.com/jamalvr/web-design/Week2)
 
 Dit is mijn eindopdracht voor het vak web design. Ik had eerst gekozen voor de eindopdracht waar ik nieuwe vakpagina/moodle achtige omgeving zou neerzetten. Omdat ik voor de meesterproef al een minor gerelateerde website heb gemaakt, leek het mij leuk een andere opdracht te maken.
 
-## The 19 [Principles of User Interface Design](http://bokardo.com/principles-of-user-interface-design/)
+- [De opdracht](# Opdracht: The 19 [Principles of User Interface Design])
+- [User scenario's](# User scenario's)
+- [Marijn](# Marijn)
+- [De website](# De website)
+  - [Home](# Home)
+  - [Detailpagina](# Detailpage van een principe)
+  - [Voorbeelden](# Voorbeelden)
+- [Future/to-do's](# Future/to-do's)
+
+## Opdracht: The 19 [Principles of User Interface Design](http://bokardo.com/principles-of-user-interface-design/)
 
 De eerstejaars studenten van CMD krijgen een tentamen over al deze principes. Het is dus aan ons (in dit geval aan mij), om er voor te zorgen dat ze op een makkelijke manier de stof kunnen begrijpen. Want laten we nou wel eerlijk wezen.
 
@@ -22,7 +31,11 @@ Wanneer je voor het eerst een droge tekst leest waar je nog geen voorstelling bi
 
 ### Marijn
 
-Ik had als testpersoon Marijn. Helaas heb ik geen usertest met hem kunnen doen. Wel heb ik ervoor gezorgd dat de website helemaal werkt met `tab` en `space`.
+Ik had als testpersoon Marijn. Helaas heb ik geen usertest met hem kunnen doen. Wel heb ik ervoor gezorgd dat de website helemaal werkt met `tab` en `space`. Omdat ik van tevoren wist dat ik niet meer hem ging testen, heb ik het wel toegankelijk gemaakt voor hem, maar niet zals hoofddoel gebruikt.
+
+veel stukken tekst en elementen zijn to the point zoals hij dat graag ziet. Helaas heb ik verder nog geen gebruik gemaakt van extra functionaliteiten of shortkeys om het NOG makkelijker voor hem te maken.
+
+![sketchnotes Marijn](img/sketchnotesmarijn.jpg)
 
 ### De website
 
@@ -55,3 +68,12 @@ De titels vanaf de detailpagina functioneren ook meteen als breadcrumbs. Zo kan 
 Bij op de examplepagina kan je ook bovenaan meteen weer zien waar je als gebruiker in de flow zit. Door de afbeelding groot naar voren te laten komen, krijgen gebruikers meteen een goed beeld van het project.
 
 Vervolgens worden de principes die per voorbeeld staan uitgelegd. De tekst is lekker groot, zodat het makkelijk leesbaar is voor iedereen.
+
+#### Future/to-do's
+
+- [ ] Vullen met meer content.
+- [ ] Andere principes uitwerken, inclusief voorbeelden.
+- [ ] Tijdens het scrollen op de homepagina aangeven op welk punt je zit.
+- [ ] Nog meer uitleg bij de voorbeelden. Concrete elementen uitligten per principe adhv het voorbeeld.
+- [ ] Timer om een x aantal seconden te hoveren of te focussen, voordat je pas kan doorklikken. Op deze manier forceer je de doelgroep eerst te laten lezen.
+- [ ] Shortkeys maken om het NOG beter te maken voor Marijn.
