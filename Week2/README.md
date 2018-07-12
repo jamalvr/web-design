@@ -1,4 +1,4 @@
-# [Webdesign eindopdracht](https://jamalvr.github.io/web-design/Week2/)
+# [Webdesign eindopdracht (demo)](https://jamalvr.github.io/web-design/Week2/)
 
 Dit is mijn eindopdracht voor het vak web design. Ik had eerst gekozen voor de eindopdracht waar ik nieuwe vakpagina/moodle achtige omgeving zou neerzetten. Omdat ik voor de meesterproef al een minor gerelateerde website heb gemaakt, leek het mij leuk een andere opdracht te maken.
 
