@@ -34,6 +34,7 @@ if(document.getElementById("principles-list")){
   wtfIndicator(); 
 }
 
+// vjeze jquery code die gelukkig wel werkt
 if(document.getElementsByClassName("sort-bar")){  
   function sort() {
     let newest = document.getElementById("newest");
@@ -45,6 +46,10 @@ if(document.getElementsByClassName("sort-bar")){
           return +a.dataset.percentage - +b.dataset.percentage;
       })
       .appendTo( $wrapper );
+      if (!newest.classList.contains("active")){
+        newest.classList.add("active");
+        oldest.classList.remove("active");
+      } 
     })
 
     oldest.addEventListener("click", function(){
@@ -52,6 +57,10 @@ if(document.getElementsByClassName("sort-bar")){
           return +a.dataset.percentage - +b.dataset.percentage;
       })
       .appendTo( $wrapper );
+      if (!oldest.classList.contains("active")){
+        oldest.classList.add("active");
+        newest.classList.remove("active");
+      } 
     })
   }
   sort(); 

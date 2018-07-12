@@ -163,12 +163,21 @@ h2 {
   border-radius: 4px;
   color: #c6003f;
   font-size: 1rem;
-  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
-.detail-page button:hover, .detail-page button:active, .detail-page button:focus {
+.detail-page button:active, .detail-page button.active {
   background-color: #c6003f;
   color: #fff;
   box-shadow: none;
+}
+.detail-page button:focus, .detail-page button:hover {
+  border-color: #93002f;
+  color: #93002f;
+}
+.detail-page button.active:hover, .detail-page button.active:focus {
+  background-color: #93002f;
+  border-color: #93002f;
+  color: #fff;
 }
 .detail-page section {
   padding: 0 0 2rem 0;
