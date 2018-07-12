@@ -50,7 +50,7 @@ if (document.getElementsByClassName("sort-bar")) {
         .appendTo($wrapper);
       if (!newest.classList.contains("active")) {
         newest.classList.add("active");
-        oldest.classList.remove("active");
+        oldest.removeAttribute("class");
       }
     });
 
@@ -63,7 +63,7 @@ if (document.getElementsByClassName("sort-bar")) {
         .appendTo($wrapper);
       if (!oldest.classList.contains("active")) {
         oldest.classList.add("active");
-        newest.classList.remove("active");
+        newest.removeAttribute("class");
       }
     });
   }
