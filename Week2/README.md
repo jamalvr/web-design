@@ -2,7 +2,7 @@
 
 Dit is mijn eindopdracht voor het vak web design. Ik had eerst gekozen voor de eindopdracht waar ik nieuwe vakpagina/moodle achtige omgeving zou neerzetten. Omdat ik voor de meesterproef al een minor gerelateerde website heb gemaakt, leek het mij leuk een andere opdracht te maken.
 
-- [De opdracht](#Opdracht:-The-19-principles-of-user-interface-Design])
+- [De opdracht](#opdracht-the-19-principles-of-user-interface-design)
 - [User scenario's](#user-scenarios)
 - [Marijn](#marijn)
 - [De website](#de-website)
