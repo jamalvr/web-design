@@ -35,7 +35,8 @@ if (document.getElementById("principles-list")) {
 }
 
 // vjeze jquery code die gelukkig wel werkt
-if (document.getElementsByClassName("sort-bar")) {
+if (document.getElementById("examples")) {
+  console.log("hai");
   function sort() {
     let newest = document.getElementById("newest");
     let oldest = document.getElementById("oldest");

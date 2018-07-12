@@ -19,3 +19,39 @@ Wanneer je voor het eerst een droge tekst leest waar je nog geen voorstelling bi
 - Als propedeuse student wil ik voorbeelden zien bij de tekst zodat ik de context van de informatie beter begrijp.
 
 - Als propedeuse student die moet leren voor een tentamen wil ik gewoon snappen wat de fuck er nou eigenlijk echt staat.
+
+### Marijn
+
+Ik had als testpersoon Marijn. Helaas heb ik geen usertest met hem kunnen doen. Wel heb ik ervoor gezorgd dat de website helemaal werkt met `tab` en `space`.
+
+### De website
+
+De website heet "Fucking principles of user interfuckingface design". Dit is natuurlijk meer als een soort grapje om een droge tekst wat losser te maken. Zoals in het laatste scenario een beetje naar voren komt, is het voor studenten natuurlijk erg frustrerend om een droge tekst te leren waar ze geen "fuck" van snappen.
+
+#### Home
+
+![Fucking homepage](img/home.png)
+
+De website bestaat uit een lange lijst met alle principes. Via de linker lijst kunnen mensen zoeken en filteren op bepaalde zoekwoorden. Met de zoekfunctie zou het makkelijker moeten zijn om door de lange lijst heen te ploeteren.
+
+De tekst zelf heb ik expres redelijk droog gehouden, zodat de studenten het op z'n minst eerst even doorscannen. Wanneer de `:hover` op de titels van de principes wordt gebruikt, komt letterlijk de vraag naar voren die ze eigenlijk al de hele tijd in hun hoofd afvragen. Namelijk:
+
+**what the actual fuck does this mean?**
+![Fucking homepage](img/wtf.png)
+
+#### Detailpage van een principe
+
+![Fucking homepage](img/detail.png)
+Om vervolgens antwoord te geven op de vraag, is de belangrijkste kernzin uitgelicht op de detailpagina. Wanneer je op de zin drukt, scroll je meteen door naar voorbeelden. Door voorbeelden te laten zien, heeft de student meteen een idee van wat er bedoelt wordt.
+
+De voorbeelden zijn sorteerbaar aan de hand van datum. Het doel is namelijk om te kijken of ze de context ook snappen door de jaren heen. Omdat het principe (in principe haha) hetzelfde blijft, maar misschien wel anders wordt toegepast.
+
+De titels vanaf de detailpagina functioneren ook meteen als breadcrumbs. Zo kan de gebruiker altijd zien waar die is in de website en altijd terug navigeren.
+
+#### Voorbeelden
+
+![voorbeeld](img/example.png)
+
+Bij op de examplepagina kan je ook bovenaan meteen weer zien waar je als gebruiker in de flow zit. Door de afbeelding groot naar voren te laten komen, krijgen gebruikers meteen een goed beeld van het project.
+
+Vervolgens worden de principes die per voorbeeld staan uitgelegd. De tekst is lekker groot, zodat het makkelijk leesbaar is voor iedereen.
