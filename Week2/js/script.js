@@ -17,17 +17,42 @@ if (document.getElementById("principles-search")) {
   }
 }
 
-function wtfIndicator() {
-  let section = document.getElementById("principles-list");
-  let links = section.getElementsByTagName("a");
-
-  for (let i = 0; i < links.length; i++) {
-    let span = document.createElement("span");
-    let text = document.createTextNode("Wat the actual fuck does this mean?");
-    span.appendChild(text);
-    span.classList.add("wtf-indicator");
-    links[i].appendChild(span);
+if(document.getElementById("principles-list")){
+  function wtfIndicator() {
+    let section = document.getElementById("principles-list");
+    let links = section.getElementsByTagName("a");
+  
+    for (let i = 0; i < links.length; i++) {
+      let span = document.createElement("span");
+      let text = document.createTextNode("Wat the actual fuck does this mean?");
+      span.appendChild(text);
+      span.classList.add("wtf-indicator");
+      links[i].appendChild(span);
+    }
   }
+
+  wtfIndicator(); 
 }
 
-wtfIndicator();
+if(document.getElementsByClassName("sort-bar")){  
+  function sort() {
+    let newest = document.getElementById("newest");
+    let oldest = document.getElementById("oldest"); 
+    let $wrapper = $('.example-images');
+
+    newest.addEventListener("click", function(){
+      $wrapper.find('a').sort(function (a, b) {
+          return +a.dataset.percentage - +b.dataset.percentage;
+      })
+      .appendTo( $wrapper );
+    })
+
+    oldest.addEventListener("click", function(){
+      $wrapper.find('a').sort(function (b, a) {
+          return +a.dataset.percentage - +b.dataset.percentage;
+      })
+      .appendTo( $wrapper );
+    })
+  }
+  sort(); 
+}
