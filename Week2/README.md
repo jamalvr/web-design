@@ -2,14 +2,14 @@
 
 Dit is mijn eindopdracht voor het vak web design. Ik had eerst gekozen voor de eindopdracht waar ik nieuwe vakpagina/moodle achtige omgeving zou neerzetten. Omdat ik voor de meesterproef al een minor gerelateerde website heb gemaakt, leek het mij leuk een andere opdracht te maken.
 
-- [De opdracht](# Opdracht: The 19 [Principles of User Interface Design])
-- [User scenario's](# User scenario's)
-- [Marijn](# Marijn)
-- [De website](# De website)
-  - [Home](# Home)
-  - [Detailpagina](# Detailpage van een principe)
-  - [Voorbeelden](# Voorbeelden)
-- [Future/to-do's](# Future/to-do's)
+- [De opdracht](#Opdracht:-The-19-principles-of-user-interface-Design])
+- [User scenario's](#user-scenarios)
+- [Marijn](#marijn)
+- [De website](#de-website)
+  - [Home](#home)
+  - [Detailpagina](#detailpage-van-een-principe)
+  - [Voorbeelden](#voorbeelden)
+- [Future/to-do's](#future/to-dos)
 
 ## Opdracht: The 19 [Principles of User Interface Design](http://bokardo.com/principles-of-user-interface-design/)
 
